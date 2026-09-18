@@ -93,7 +93,7 @@ function App() {
           </div>
 
           <div className="hero-image">
-            <img src="/assets/hero-banner.jpg" alt="Tiasha's Collection fashion banner" />
+            <img src="/assets/hero-banner.png" alt="Tiasha's Collection fashion banner" />
             {/* <div className="hero-tag">TIASHA'S<br />COLLECTION</div> */}
           </div>
         </section>
