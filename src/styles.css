@@ -207,7 +207,7 @@ em { color: #7b8050; }
 .whatsapp-button {
   border: 0;
   border-radius: 999px;
-  padding: 15px 22px;
+  padding: 16px 26px;
   background: #707749;
   color: #fff;
   text-decoration: none;
@@ -220,14 +220,14 @@ em { color: #7b8050; }
 }
 
 .primary-button:hover,
-.whatsapp-button:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(80,88,44,.2); }
+.whatsapp-button:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(80,88,44,.18); }
 
 .hero-image {
   height: min(70vh, 700px);
   position: relative;
   overflow: hidden;
-  border-radius: 5px 80px 5px 80px;
-  box-shadow: 0 30px 70px rgba(73, 82, 45, .16);
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(73, 82, 45, .12);
 }
 
 .hero-image img {
@@ -282,14 +282,14 @@ em { color: #7b8050; }
 .season-card {
   min-height: 260px;
   padding: 30px;
-  border: 1px solid rgba(87, 98, 51, .13);
-  background: rgba(255,255,255,.22);
+  border: 1px solid rgba(87, 98, 51, .10); border-radius: 18px;
+  background: rgba(255,255,255,.28); backdrop-filter: blur(8px);
   position: relative;
   transition: .3s ease;
 }
 
 .season-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-8px); box-shadow: 0 20px 40px rgba(80, 88, 44, .10);
   background: rgba(255,255,255,.4);
 }
 
@@ -345,6 +345,8 @@ em { color: #7b8050; }
 }
 
 .editorial-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
   height: 650px;
   overflow: hidden;
   background: #ccd8bc;
@@ -421,7 +423,7 @@ em { color: #7b8050; }
   grid-template-columns: .4fr 1fr;
   gap: 7vw;
   align-items: center;
-  background: rgba(255,255,255,.22);
+  background: rgba(255,255,255,.28); backdrop-filter: blur(8px);
 }
 
 .story-mark {
@@ -595,6 +597,8 @@ footer {
 
   .editorial-row.row-right .editorial-image,
   .editorial-row.row-left .editorial-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
     width: 100%;
     justify-self: stretch;
   }
@@ -608,6 +612,8 @@ footer {
 
   /* MOBILE EDITORIAL IMAGE FIX */
   .editorial-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
     height: auto;
     min-height: 0;
     overflow: visible;

@@ -7,15 +7,15 @@ const collections = [
 ]
 
 const dresses = [
-  { image: '/assets/dress-01.png', label: 'Featured Look' },
-  { image: '/assets/dress-04.png', label: 'Signature Style' },
-  { image: '/assets/dress-05.png', label: 'Elegant Edit' },
-  { image: '/assets/dress-06.png', label: 'Soft Statement' },
-  { image: '/assets/dress-07.png', label: 'The Collection' },
+  { image: '/assets/dress-01.jpg', label: 'Featured Look' },
+  { image: '/assets/dress-04.jpg', label: 'Signature Style' },
+  { image: '/assets/dress-05.jpg', label: 'Elegant Edit' },
+  { image: '/assets/dress-06.jpg', label: 'Soft Statement' },
+  { image: '/assets/dress-07.jpg', label: 'The Collection' },
 ]
 
-const whatsapp = '01716793693'
-const whatsappLink = `https://wa.me/8801716793693`
+const whatsapp = '01711-772882'
+const whatsappLink = `https://wa.me/8801711772882`
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -94,7 +94,7 @@ function App() {
 
           <div className="hero-image">
             <img src="/assets/hero-banner.jpg" alt="Tiasha's Collection fashion banner" />
-            {/* <div className="hero-tag">TIASHA'S<br />COLLECTION</div> */}
+            <div className="hero-tag">TIASHA'S<br />COLLECTION</div>
           </div>
         </section>
 
@@ -146,13 +146,13 @@ function App() {
                 </blockquote>
               </div>
               <div className="editorial-image">
-                <img src="/assets/dress-01.png" alt="Tiasha's Collection featured dress" />
+                <img src="/assets/dress-01.jpg" alt="Tiasha's Collection featured dress" />
               </div>
             </article>
 
             <article className="editorial-row row-left">
               <div className="editorial-image">
-                <img src="/assets/dress-04.png" alt="Tiasha's Collection signature dress" />
+                <img src="/assets/dress-04.jpg" alt="Tiasha's Collection signature dress" />
               </div>
               <div className="editorial-text">
                 <span className="story-number">02</span>
@@ -182,13 +182,13 @@ function App() {
                 </blockquote>
               </div>
               <div className="editorial-image">
-                <img src="/assets/dress-05.png" alt="Tiasha's Collection elegant dress" />
+                <img src="/assets/dress-05.jpg" alt="Tiasha's Collection elegant dress" />
               </div>
             </article>
 
             <article className="editorial-row row-left">
               <div className="editorial-image">
-                <img src="/assets/dress-06.png" alt="Tiasha's Collection soft statement dress" />
+                <img src="/assets/dress-06.jpg" alt="Tiasha's Collection soft statement dress" />
               </div>
               <div className="editorial-text">
                 <span className="story-number">04</span>
@@ -218,7 +218,7 @@ function App() {
                 </blockquote>
               </div>
               <div className="editorial-image">
-                <img src="/assets/dress-07.png" alt="Tiasha's Collection final editorial look" />
+                <img src="/assets/dress-07.jpg" alt="Tiasha's Collection final editorial look" />
               </div>
             </article>
 
