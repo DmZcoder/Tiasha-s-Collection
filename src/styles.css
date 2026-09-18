@@ -225,16 +225,19 @@ em { color: #7b8050; }
 .hero-image {
   height: min(70vh, 700px);
   position: relative;
-  overflow: hidden;
-  border-radius: 24px;
-  box-shadow: 0 25px 60px rgba(73, 82, 45, .12);
+  overflow: visible;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
+  background: transparent;
 }
 
 .hero-tag {
@@ -642,3 +645,92 @@ footer {
 
 
 .automation-hidden { display: none !important; }
+
+.editorial-image-empty {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* EDITORIAL STORY FLOW FIX */
+.editorial-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 11vw;
+}
+
+.editorial-row {
+  width: 100%;
+  flex: none;
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: 650px;
+  gap: 5vw;
+  overflow: hidden;
+}
+
+.editorial-image {
+  min-width: 0;
+  min-height: 0;
+}
+
+.editorial-image img {
+  max-width: 100%;
+}
+
+@media (max-width: 560px) {
+  .editorial-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+  }
+
+  .editorial-row.row-right,
+  .editorial-row.row-left {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    overflow: visible;
+  }
+
+  .editorial-row .editorial-text,
+  .editorial-row .editorial-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .editorial-row .editorial-image {
+    order: 2;
+  }
+
+  .editorial-row .editorial-text {
+    order: 1;
+  }
+
+  .editorial-row .editorial-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* FOOTER BRANDING */
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer span {
+  display: block;
+}
+
+
+/* MOBILE SIDEBAR WIDTH */
+@media (max-width: 560px) {
+  .side-panel {
+    width: min(300px, 78vw);
+  }
+}
