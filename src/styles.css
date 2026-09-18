@@ -347,6 +347,8 @@ em { color: #7b8050; }
 .editorial-image {
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
   height: 650px;
   overflow: hidden;
   background: #ccd8bc;
@@ -599,6 +601,8 @@ footer {
   .editorial-row.row-left .editorial-image {
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
     width: 100%;
     justify-self: stretch;
   }
@@ -612,6 +616,8 @@ footer {
 
   /* MOBILE EDITORIAL IMAGE FIX */
   .editorial-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(73, 82, 45, .10);
     height: auto;
